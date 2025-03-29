@@ -21,6 +21,7 @@ pipeline
         stage('Run'){
             steps{
                 sh('npm run')
+                sh ('npm run server.js')
                 sh ('npm run build')
             }
         }
