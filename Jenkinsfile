@@ -18,6 +18,7 @@ pipeline
         }
         stage('Run'){
             steps{
+                sh('npm run')
                 sh ('npm run build')
             }
         }
