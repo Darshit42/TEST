@@ -7,7 +7,7 @@ pipeline
     stages {
         stage('Build') {
             steps {
-                git clone https://github.com/Darshit42/TEST.git
+                git clone "https://github.com/Darshit42/TEST.git"
                 sh ('npm install')
             }
         }
