@@ -22,6 +22,7 @@ pipeline
             steps{
                 sh('npm run')
                 sh ('node server.js')
+                sh ('kill localhost:3000')
                 sh ('npm run server.js')
                 sh ('npm run build')
             }
