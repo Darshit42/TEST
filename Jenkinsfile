@@ -12,7 +12,7 @@ pipeline
         }
         stage('Test') {
             steps {
-                sh('npm test' || echo'NO tests defined')
+                sh('npm test')
             }
         }
         stage('Build'){
